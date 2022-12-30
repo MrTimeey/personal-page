@@ -5,10 +5,14 @@ export const useProfileStore = defineStore({
     state: () => ({
         profile: {
             name: 'Tim Kruse',
+            imagePath: '../../public/profile.jpg',
             position: 'Software Developer',
             location: 'Bremen - Germany',
             description: 'Totally optional short description about yourself, what you do and so on.',
-            mail: 'coding@tim-kruse.com',
+            contact: {
+                mail: 'coding@tim-kruse.com',
+                subject: 'Hello from profile homepage',
+            },
         },
     }),
 });
