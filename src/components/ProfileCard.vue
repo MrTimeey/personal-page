@@ -28,7 +28,7 @@
                             <SocialMediaHandle icon="github" href="https://google.com" />
                             <SocialMediaHandle icon="unsplash" />
                             <SocialMediaHandle icon="dribble" />
-                            <SocialMediaHandle icon="instagram" />
+                            <SocialMediaHandle icon="instagram" href="" />
                             <SocialMediaHandle icon="youtube" />
                         </div>
                     </div>

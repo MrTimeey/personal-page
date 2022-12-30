@@ -13,6 +13,13 @@ export const useProfileStore = defineStore({
                 mail: 'coding@tim-kruse.com',
                 subject: 'Hello from profile homepage',
             },
+            socialMedia: {
+                github: 'https://github.com/MrTimeey/',
+                instagram: 'https://www.instagram.com/mrtimeey/',
+                twitter: 'https://twitter.com/tim_siegler',
+                xing: 'https://www.xing.com/profile/Tim_Siegler3',
+                youtube: 'https://www.youtube.com/channel/UC9XNrdrDvHtiRGZ2ru7mgRA',
+            },
         },
     }),
 });
