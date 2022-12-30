@@ -1,4 +1,4 @@
-# personal-page
+# personal-page ![main](https://github.com/MrTimeey/personal-page/workflows/main/badge.svg?branch=main)
 
 Simple profile page with vue3, vite and tailwind. Highly inspired by [tailwindtoolbox / Profile-Card](https://github.com/tailwindtoolbox/Profile-Card).
 
