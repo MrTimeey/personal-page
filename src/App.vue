@@ -1,9 +1,7 @@
 <script setup>
-// eslint-disable-next-line no-unused-vars
-import Profile from './components/Profile.vue';
+import ProfileCard from './components/ProfileCard.vue';
 </script>
 
 <template>
-    <h1 class="heading-1">TIM</h1>
-    <!--    <Profile></Profile>-->
+    <ProfileCard></ProfileCard>
 </template>

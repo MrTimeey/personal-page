@@ -1,6 +1,6 @@
 # personal-page
 
-This template should help get you started developing with Vue 3 in Vite.
+Simple profile page with vue3, vite and tailwind. Highly inspired by [tailwindtoolbox / Profile-Card](https://github.com/tailwindtoolbox/Profile-Card).
 
 ## Project Setup
 
