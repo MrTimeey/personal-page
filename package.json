@@ -9,16 +9,17 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "pinia": "^2.0.28",
     "vue": "^3.2.45"
   },
   "devDependencies": {
+    "@vitejs/plugin-vue": "^4.0.0",
     "@vue/eslint-config-prettier": "^7.0.0",
+    "autoprefixer": "^10.4.13",
     "eslint": "^8.22.0",
     "eslint-plugin-vue": "^9.3.0",
-    "prettier": "^2.7.1",
-    "@vitejs/plugin-vue": "^4.0.0",
-    "autoprefixer": "^10.4.13",
     "postcss": "^8.4.20",
+    "prettier": "^2.7.1",
     "tailwindcss": "^3.2.4",
     "vite": "^4.0.0"
   }
