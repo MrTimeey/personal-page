@@ -36,10 +36,14 @@
 import WorkIcon from './icons/WorkIcon.vue';
 import WorldIcon from './icons/WorldIcon.vue';
 import SocialMediaHandle from './icons/social/SocialMediaHandle.vue';
-import profileData from '../assets/profile.json';
-import { ref } from 'vue';
+import { onMounted, ref } from 'vue';
 
-const profile = ref(profileData);
+const profile = ref({});
+
+onMounted(async () => {
+    const res = await fetch('./data/profile.json');
+    profile.value = res.json();
+});
 
 const contactFunction = (contact) => {
     const subject = encodeURIComponent(contact.subject);
