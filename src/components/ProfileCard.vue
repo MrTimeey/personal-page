@@ -23,7 +23,7 @@
                         </div>
 
                         <div class="mt-6 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between">
-                            <SocialMediaHandle v-for="[key, value] in Object.entries(profile.socialMedia)" :key="key" :icon="key" :href="value" />
+                            <SocialMediaHandle v-for="[key, value] in Object.entries(profile.socialMedia ?? {})" :key="key" :icon="key" :href="value" />
                         </div>
                     </div>
                 </div>
@@ -42,7 +42,7 @@ const profile = ref({});
 
 onMounted(async () => {
     const res = await fetch('./data/profile.json');
-    profile.value = res.json();
+    profile.value = await res.json();
 });
 
 const contactFunction = (contact) => {
