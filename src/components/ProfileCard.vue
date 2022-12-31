@@ -4,7 +4,11 @@
             <div class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0">
                 <div id="profile" class="w-full rounded-lg lg:rounded-l-lg hadow-2xl bg-white opacity-75 mx-6 lg:mx-0">
                     <div class="p-4 md:p-12 text-center lg:text-left">
-                        <div class="block rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center" :style="`background-image: url(./data/${profile.imageName})`"></div>
+                        <div
+                            v-if="profile.imageName"
+                            class="block rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center"
+                            :style="`background-image: url(./data/${profile.imageName})`"
+                        ></div>
 
                         <h1 class="text-3xl font-bold pt-8 lg:pt-0">{{ profile.name }}</h1>
                         <div class="mx-auto lg:mx-0 pt-3 border-b-2 border-color opacity-25"></div>
