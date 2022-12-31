@@ -4,7 +4,7 @@
             <div class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0">
                 <div id="profile" class="w-full rounded-lg lg:rounded-l-lg hadow-2xl bg-white opacity-75 mx-6 lg:mx-0">
                     <div class="p-4 md:p-12 text-center lg:text-left">
-                        <div class="block rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center" :style="`background-image: url(${profile.imagePath})`"></div>
+                        <div class="block rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center" :style="`background-image: url(./data/${profile.imageName})`"></div>
 
                         <h1 class="text-3xl font-bold pt-8 lg:pt-0">{{ profile.name }}</h1>
                         <div class="mx-auto lg:mx-0 pt-3 border-b-2 border-color opacity-25"></div>
@@ -23,13 +23,7 @@
                         </div>
 
                         <div class="mt-6 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between">
-                            <SocialMediaHandle icon="facebook" />
-                            <SocialMediaHandle icon="twitter" />
-                            <SocialMediaHandle icon="github" href="https://google.com" />
-                            <SocialMediaHandle icon="unsplash" />
-                            <SocialMediaHandle icon="dribble" />
-                            <SocialMediaHandle icon="instagram" href="" />
-                            <SocialMediaHandle icon="youtube" />
+                            <SocialMediaHandle v-for="[key, value] in Object.entries(profile.socialMedia)" :key="key" :icon="key" :href="value" />
                         </div>
                     </div>
                 </div>
@@ -42,10 +36,11 @@
 import WorkIcon from './icons/WorkIcon.vue';
 import WorldIcon from './icons/WorldIcon.vue';
 import SocialMediaHandle from './icons/social/SocialMediaHandle.vue';
-import { useProfileStore } from '../stores/profile.js';
-import { storeToRefs } from 'pinia';
+import profileData from '../assets/profile.json';
+import { ref } from 'vue';
 
-const { profile } = storeToRefs(useProfileStore());
+const profile = ref(profileData);
+
 const contactFunction = (contact) => {
     const subject = encodeURIComponent(contact.subject);
     location.href = `mailto:${contact.mail}?subject=${subject}`;
