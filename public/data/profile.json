@@ -1,20 +1,18 @@
 {
-  "name": "Tim Kruse",
-  "imageName": "profile.jpg",
+  "name": "John Doe",
+  "imageName": "profile.png",
   "position": "Software Developer",
-  "location": "Bremen - Germany",
-  "description": "Software Developer with passion for clean code and learning new things.",
+  "location": "Somewhere - Germany",
+  "description": "Total optional description about yourself.",
   "contact": {
-    "mail": "coding@tim-kruse.com",
+    "mail": "test@mail.com",
     "subject": "Hello from profile homepage"
   },
   "socialMedia": {
-    "github": "https://github.com/MrTimeey/",
-    "devTo": "https://dev.to/mrtimeey/",
-    "strava": "https://www.strava.com/athletes/mrtimeey",
-    "instagram": "https://www.instagram.com/mrtimeey/",
-    "twitter": "https://twitter.com/tim_kruse_3",
-    "xing": "https://www.xing.com/profile/Tim_Kruse37",
-    "youtube": "https://www.youtube.com/channel/UC9XNrdrDvHtiRGZ2ru7mgRA"
+    "github": "https://github.com/",
+    "devTo": "https://dev.to/",
+    "instagram": "https://www.instagram.com/",
+    "twitter": "https://twitter.com/",
+    "youtube": "https://www.youtube.com/"
   }
 }

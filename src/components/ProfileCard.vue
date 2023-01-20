@@ -47,6 +47,7 @@ const profile = ref({});
 onMounted(async () => {
     const res = await fetch('./data/profile.json');
     profile.value = await res.json();
+    document.title = profile.value.name ?? 'Profile Page';
 });
 
 const contactFunction = (contact) => {
